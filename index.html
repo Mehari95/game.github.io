@@ -1,0 +1,117 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+  
+	<title> TicTacToe Game </title>
+    	<link rel="stylesheet" type="text/css"/>
+	<script src="TicTacToe.js"></script> 
+	<style>
+	body {
+    font: normal 16px courier, arial;
+    text-align: center;
+}
+.title{
+font-family:sans-serif;
+}
+.ttt .scoreboard > tr { 
+border-color: #238EE1;
+}
+
+.ttt .scoreboard {
+  margin: auto;
+}
+
+.ttt .scoreboard .score {
+    text-align: center;
+    font-size: 30px
+}
+
+.ttt .scoreboard .score.X {
+    color: red;
+}
+
+.ttt .scoreboard .score.O {
+    color: green;
+}
+
+
+.ttt .board table {
+    cell-spacing: 0px;
+    border-spacing: 0px;
+    border-collapse: separate;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: 30px auto;
+}
+
+.ttt .board td {
+    border: solid #000;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font: 200 60px helvetica neue, arial;
+    cursor: pointer;
+
+}
+
+.ttt .board td.X {
+    color:red;
+}
+
+.ttt .board td.O {
+    color: green;
+}
+#x {color:red;}
+#o {color:green;}
+	</style>
+	</head>
+<body>
+
+    <h1 class="title"> TicTacToe Game IT583 </h1>
+
+    <div class="game-canvas">
+		  <div class="ttt">
+        
+		          <table class="scoreboard">
+             
+			   <tr>
+                  
+				  <td id="x"> Player X </td>
+             
+				   <td width="30"> &nbsp; </td>
+               
+				   <td id="o"> Player O </td>
+               
+			 </tr>
+        
+			        <tr>
+                 
+				   <td class="score X">
+                  		 0
+             		 </td>
+            
+				   <td> &nbsp; </td>
+                  
+				  <td class="score O">
+      				     0
+      			    </td>
+       
+			         </tr>
+           
+		             </table>
+
+		 <div class="board"></div>
+
+                   
+		<select class="grid-options">
+                            
+            </select>
+        </div>
+
+    </div>
+	<script> Tic_Tac_Toe('.game-canvas');</script>
+</body>
+
+</html>
